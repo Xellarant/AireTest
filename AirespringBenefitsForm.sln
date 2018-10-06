@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirespringBenefitsForm", "AirespringBenefitsForm\AirespringBenefitsForm.csproj", "{760D2D8A-FCD1-461F-BC39-3681021764F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirespringBenefitsForm.Tests", "AirespringBenefitsForm.Tests\AirespringBenefitsForm.Tests.csproj", "{EC63AE53-2032-4753-B10B-AB80C5E501E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{760D2D8A-FCD1-461F-BC39-3681021764F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760D2D8A-FCD1-461F-BC39-3681021764F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760D2D8A-FCD1-461F-BC39-3681021764F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760D2D8A-FCD1-461F-BC39-3681021764F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC63AE53-2032-4753-B10B-AB80C5E501E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC63AE53-2032-4753-B10B-AB80C5E501E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC63AE53-2032-4753-B10B-AB80C5E501E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC63AE53-2032-4753-B10B-AB80C5E501E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {369B26CA-D2B0-4BE5-8C25-EF01E62E2E0F}
+	EndGlobalSection
+EndGlobal
