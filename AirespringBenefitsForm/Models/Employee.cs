@@ -61,8 +61,9 @@ namespace AirespringBenefitsForm.Models
                 {
                     string oString = $"EXEC erpEmployeeInsert '{newEntry.EmployeeID}', '{newEntry.LastName}', '{newEntry.FirstName}', '{newEntry.PhoneNumber}', '{newEntry.ZipCode}', '{newEntry.HireDate}'";
                     SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                    myConnection.Open();
                     oCmd.ExecuteNonQuery();
-                    
+                    myConnection.Close();
                 } // end SqlConnection using
             }
             catch (Exception ex)

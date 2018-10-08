@@ -19,7 +19,10 @@ namespace AirespringBenefitsForm
         // Events //
         protected void Page_Load(object sender, EventArgs e)
         {
-            refreshEmployeeTable();
+            if (!Page.IsPostBack) // so form submissions don't trigger this (only initial load or refresh)
+            {
+                refreshEmployeeTable();
+            }
         }
 
         protected void btSubmitNewEmployee_Click(object sender, EventArgs e)
@@ -29,13 +32,18 @@ namespace AirespringBenefitsForm
                 EmployeeID = Request.Form["tbEmployeeID"],
                 FirstName = Request.Form["tbFirstName"],
                 LastName = Request.Form["tbLastName"],
-                PhoneNumber = Request.Form["PhoneNumber"],
+                PhoneNumber = Request.Form["tbPhoneNumber"],
                 ZipCode = Request.Form["tbZipCode"],
                 HireDate = DateTime.Parse(Request.Form["tbHireDate"])
             };
             Models.Employee.AddEmployee(newEmployee);
             refreshEmployeeTable();
         }
-        
+
+        protected void btSearch_Click(object sender, EventArgs e)
+        {
+            string searchTerm = Request.Form["tbSearch"];
+            refreshEmployeeTable(searchTerm);
+        }
     }
 }
